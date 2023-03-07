@@ -11,15 +11,28 @@
         body {
             background-color:rgb(255, 245, 255);
         }
-       .tanda {
-           margin-left:0%;
-           margin-top:0%;
-       }
-       .kordza {
-           margin-left:40%;
-           margin-top:-39%;
-       }
+        #tanda {
+        	margin-left:20%;
+            font-size:33px;
+        }
+        #kordza {
+        	margin-left:25%;
+            font-size:33px;
+        }
+       /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
         
         
     </style>
@@ -27,17 +40,25 @@
     <body>
     <h1>Everything about Future Stars in Football </h1>
     
-    <div class="tanda">
-    <img src="https://sfl.ge/storage/players/November2022/iQIjMP4pFiRC3a6ItIjd.jpg">
-    <p> <u>Nikoloz Tandashvili</u> </p> 
-         </div>
+
+
+
+<div class="row">
     
-     
-     
-     <div class="kordza">
-    <img id="kordza" src="https://sfl.ge/storage/players/November2022/ACrmHio0HZmNS4LrFw9F.jpg">
-   <p> <u>Giorgi Kordzaia </u> </p>
-         </div>
+    <div class="column">
+    
+    <img src="https://sfl.ge/storage/players/November2022/iQIjMP4pFiRC3a6ItIjd.jpg" alt="Nikoloz Tandashvili" style="width:100%">
+    <u id="tanda">Nikoloz Tandashvili</u>
+                </div>
+    
+    
+    <div class="column">
+    
+    <img src="https://sfl.ge/storage/players/November2022/ACrmHio0HZmNS4LrFw9F.jpg" alt="Giorgi Kordzaia" style="width:100%">
+    <u id="kordza">Giorgi Kordzaia</u>
+                </div>
+  
+  </div>
 
     
     
